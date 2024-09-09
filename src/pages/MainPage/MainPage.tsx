@@ -21,30 +21,39 @@ export const MainPage = () => {
 					<ProductCard />
 					<ProductCard />
 				</div>
-				<div
-					aria-hidden='true'
-					className='section-catalog-background section-catalog-background--video'
-					role='presentation'
-				>
-					<div className={styles.videoBlock}>
-						<div className={styles.magazineBlock}>
-							<img src='https://www.homer.com/cdn/shop/files/0_front-cover_1200x.png?v=1684768508' />
-						</div>
-
-						<div className={styles.storeInfoBlock}></div>
-						<video className={styles.video} autoPlay={true} loop={true} muted={true}>
-							<source
-								src='https://cdn.shopify.com/videos/c/o/v/3336e4477eba43ecaf88e6023908e5b3.mp4'
-								type='video/mp4'
-							/>
-						</video>
-					</div>
-					<div className={styles.storeInfo}>
+				<div className={styles.videoMain}>
+					<div className={styles.magazineBlock}>
 						<img
-							className={styles.storeInfoImage}
-							src='https://www.homer.com/cdn/shop/files/DSCF9361_rafv2_2000px_2000x.jpg?v=1668092669'
+							className={styles.magazineImage}
+							src='https://www.homer.com/cdn/shop/files/0_front-cover_1200x.png?v=1684768508'
 						/>
+						<div className={styles.magazineCard}>
+							<div className={styles.magazineCardTitle}></div>
+							<div className={styles.magazineCardDescription}></div>
+						</div>
 					</div>
+					<div
+						aria-hidden='true'
+						className='section-catalog-background section-catalog-background--video'
+						role='presentation'
+					>
+						<div className={styles.videoBlock}>
+							<video className={styles.video} autoPlay={true} loop={true} muted={true}>
+								<source
+									src='https://cdn.shopify.com/videos/c/o/v/3336e4477eba43ecaf88e6023908e5b3.mp4'
+									type='video/mp4'
+								/>
+							</video>
+						</div>
+					</div>
+					{/* <div className={styles.storeInfoBlock}>
+						<div className={styles.storeInfo}>
+							<img
+								className={styles.storeInfoImage}
+								src='https://www.homer.com/cdn/shop/files/DSCF9361_rafv2_2000px_2000x.jpg?v=1668092669'
+							/>
+						</div>
+					</div> */}
 				</div>
 			</div>
 		</>

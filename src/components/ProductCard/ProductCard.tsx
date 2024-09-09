@@ -7,6 +7,7 @@ export const ProductCard = () => {
 			<div className={styles.mainBlock}>
 				<div className={styles.imageBlock}>
 					<img
+						className={styles.mainImage}
 						alt='123'
 						src='https://www.homer.com/cdn/shop/products/220901_SphereLegs_Leaf_01__2048_800x.png?v=1704301791'
 					/>
