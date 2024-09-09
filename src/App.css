@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
+@font-face {
+	font-display: swap;
+	font-family: Unica77LLWeb1;
+	font-style: normal;
+	font-weight: 400;
+	src: url(//www.homer.com/cdn/shop/t/45/assets/Unica77LLWeb-Regular.woff2?v=173385283974658921301714525210)
+			format('woff2'),
+		url(//www.homer.com/cdn/shop/t/45/assets/Unica77LLWeb-Regular.woff?v=80763290268616072091714525209) format('woff');
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+	font-display: swap;
+	font-family: Unica77LLWeb2;
+	font-style: normal;
+	font-weight: 700;
+	src: url(//www.homer.com/cdn/shop/t/45/assets/Unica77LLWeb-Black.woff2?v=20733787471401822751714525208)
+			format('woff2'),
+		url(//www.homer.com/cdn/shop/t/45/assets/Unica77LLWeb-Black.woff?v=44885006776518223191714525207) format('woff');
 }
