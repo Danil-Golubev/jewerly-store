@@ -23,13 +23,26 @@ export const MainPage = () => {
 				</div>
 				<div className={styles.videoMain}>
 					<div className={styles.magazineBlock}>
-						<img
-							className={styles.magazineImage}
-							src='https://www.homer.com/cdn/shop/files/0_front-cover_1200x.png?v=1684768508'
-						/>
+						<div className={styles.imageBlock}>
+							<img
+								alt='magazine'
+								className={styles.magazineImage}
+								src='https://www.homer.com/cdn/shop/files/0_front-cover_1200x.png?v=1684768508'
+							/>
+						</div>
 						<div className={styles.magazineCard}>
-							<div className={styles.magazineCardTitle}></div>
-							<div className={styles.magazineCardDescription}></div>
+							<div className={styles.magazineCardBlock}>
+								<div>
+									<div className={styles.magazineCardTitle}>Mutations</div>
+									<div className={styles.magazineCardDesc}>photographs by Frank Ocean</div>
+								</div>
+								<div className={styles.buttonAdd}>
+									<div className={styles.buttonAddInfo}>
+										<div className={styles.cardTitle}>Sold out</div>
+										<div className={styles.cardPrice}>€82,00</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div
@@ -46,14 +59,14 @@ export const MainPage = () => {
 							</video>
 						</div>
 					</div>
-					{/* <div className={styles.storeInfoBlock}>
-						<div className={styles.storeInfo}>
-							<img
-								className={styles.storeInfoImage}
-								src='https://www.homer.com/cdn/shop/files/DSCF9361_rafv2_2000px_2000x.jpg?v=1668092669'
-							/>
-						</div>
-					</div> */}
+				</div>
+				<div className={styles.storeInfoBlock}>
+					<div className={styles.storeInfo}>
+						<img
+							className={styles.storeInfoImage}
+							src='https://www.homer.com/cdn/shop/files/DSCF9361_rafv2_2000px_2000x.jpg?v=1668092669'
+						/>
+					</div>
 				</div>
 			</div>
 		</>

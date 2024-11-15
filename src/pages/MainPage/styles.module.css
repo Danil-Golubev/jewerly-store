@@ -40,17 +40,68 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
+	flex-direction: column;
 	z-index: 1;
 }
+.imageBlock {
+	display: flex;
+	justify-content: center;
+	height: 875px;
+	width: 100%;
+}
 .magazineImage {
-	width: 80%;
-	height: auto;
+	width: auto;
+	height: 100%;
 }
 .storeInfo {
-	height: 40%;
-	z-index: 10;
+	height: 100;
 }
 .storeInfoImage {
-	width: 30%;
-	z-index: 10;
+	width: 50%;
+}
+
+.magazineCard {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+.magazineCardBlock {
+	height: auto;
+	width: 380px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.magazineCardTitle {
+	font-family: 'Unica77LLWeb2';
+}
+.magazineCardDesc {
+	font-family: 'Unica77LLWeb1';
+}
+.buttonAdd {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	font-size: 12px;
+	background-color: rgb(90, 90, 90);
+}
+
+.cardTitle {
+	font-family: 'Unica77LLWeb2';
+}
+.cardPrice {
+	font-family: 'Unica77LLWeb1';
+}
+.buttonAddInfo {
+	font-family: 'Unica77LLWeb1';
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
 }
