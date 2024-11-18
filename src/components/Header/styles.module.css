@@ -15,15 +15,12 @@
 
 .mainTitleBlock {
 	font-family: 'Unica77LLWeb2';
-	gap: 30px;
-	align-items: center;
 	width: 620px;
 	height: 160px;
-	display: flex;
 }
 
 .menuBlock {
-	gap: 25px;
+	gap: 60px;
 	height: auto;
 	display: flex;
 	justify-content: space-between;
@@ -34,8 +31,18 @@
 	justify-content: end;
 }
 
+.menuButton {
+	cursor: pointer;
+}
+.menuButton:hover {
+	color: #00af66;
+}
+
 @media (max-width: 900px) {
 	.mainTitleBlock {
 		width: 100%;
+	}
+	.menuBlock {
+		gap: 25px;
 	}
 }

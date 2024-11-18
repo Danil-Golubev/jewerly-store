@@ -1,14 +1,21 @@
 import styles from './styles.module.css';
 
 export const Header = () => {
+	function openMenu() {
+		const openMenu = new Event('openMenu');
+		window.dispatchEvent(openMenu);
+	}
+
 	return (
 		<>
 			<div className={styles.headerBlock}>
 				<div className={styles.headerContent}>
 					<div className={styles.menuBlock}>
-						<div className={styles.menuButton}>Menu</div>
-						<div className={styles.searchButton}>Search</div>
-						<div className={styles.cartButton}>Cart</div>
+						<a onClick={() => openMenu()} className={styles.menuButton}>
+							Menu
+						</a>
+						<div className={styles.menuButton}>Search</div>
+						<div className={styles.menuButton}>Cart</div>
 					</div>
 					<div className={styles.mainTitleBlock}>
 						<svg viewBox='0 0 124.99 29.39'>

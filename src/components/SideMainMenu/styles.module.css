@@ -1,0 +1,101 @@
+/* Стили меню */
+.header {
+	height: 50px;
+	width: 100%;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: -600px; /* Начальное скрытое положение */
+	width: 320px;
+	height: 100%;
+	background-color: #f2f1f0;
+	color: black;
+	padding: 20px;
+	transition: right 0.3s ease; /* Плавность открытия/закрытия */
+	z-index: 1000;
+}
+
+.sidebar.open {
+	right: 0; /* Меню открыто */
+}
+
+.close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: transparent;
+	color: black;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.collectionsList {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.itemsBox {
+	gap: 5px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+}
+.itemsBox:hover {
+	color: #00af66;
+}
+
+.itemsList {
+	display: flex;
+	gap: 7px;
+}
+
+.image {
+	width: 28px;
+	height: 28px;
+}
+
+.divider {
+	width: 100%;
+	background-color: black;
+	height: 4px;
+}
+
+.filterTable {
+	display: flex;
+	font-size: 14px;
+}
+.firstColumn,
+.secondColumn {
+	width: 50%;
+
+	height: 400px;
+}
+
+.filtersBox {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.filterList {
+	width: 100%;
+	height: auto;
+	background-color: red;
+	display: flex;
+	justify-content: space-between;
+}
+
+a {
+	font-size: 18px;
+}
+
+@media (max-width: 900px) {
+	.sidebar {
+		width: 95%;
+		right: -100%;
+	}
+}

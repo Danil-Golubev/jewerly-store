@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { ProductCard } from '../../components/ProductCard/ProductCard';
 import styles from './styles.module.css';
 
