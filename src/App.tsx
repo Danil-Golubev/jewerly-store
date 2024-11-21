@@ -12,12 +12,10 @@ function App() {
 			<SideMainMenu />
 			<Header />
 			<div className='main'>
-				<BrowserRouter>
-					<Routes>
-						<Route path='/' element={<MainPage />} />
-						<Route path='/products' element={<AllProducts />} />
-					</Routes>
-				</BrowserRouter>
+				<Routes>
+					<Route path='/' element={<MainPage />} />
+					<Route path='/products' element={<AllProducts />} />
+				</Routes>
 			</div>
 
 			{/* <Footer /> */}

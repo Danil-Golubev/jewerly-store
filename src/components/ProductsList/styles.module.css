@@ -1,0 +1,14 @@
+.list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+	gap: 4%;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-bottom: 300px;
+}
+
+@media (max-width: 900px) {
+	.list {
+		grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+	}
+}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import { collections } from './consts';
+import { Link } from 'react-router-dom';
 export const SideMainMenu = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	function openMenu() {
@@ -24,9 +25,9 @@ export const SideMainMenu = () => {
 					<div className={styles.collectionsList}>
 						{collections.map((item) => (
 							<div className={styles.itemsBox}>
-								<a href={item.link} key={item.title}>
-									{item.title}
-								</a>
+								<Link to='/products' key={item.title}>
+									<a>{item.title}</a>
+								</Link>
 								<div className={styles.itemsList}>
 									{item.items.map((image) => (
 										<img alt={item.title} className={styles.image} src={image}></img>

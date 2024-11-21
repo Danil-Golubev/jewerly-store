@@ -44,9 +44,6 @@
 	display: flex;
 	flex-direction: column;
 }
-.itemsBox:hover {
-	color: #00af66;
-}
 
 .itemsList {
 	display: flex;

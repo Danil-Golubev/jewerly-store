@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ProductCard } from '../../components/ProductCard/ProductCard';
 import styles from './styles.module.css';
+import { ProductsList } from '../../components/ProductsList/ProductsList';
 
 export const MainPage = () => {
 	return (
@@ -11,7 +12,7 @@ export const MainPage = () => {
 					className={styles.mainImage}
 					src='https://www.homer.com/cdn/shop/files/desktop_45547f03-5bbe-4ace-9fc5-832e459000c0_1800x.png?v=1687880815'
 				/>
-				<div className={styles.showcaseBlock}>
+				{/* <ProductsList>
 					<ProductCard />
 					<ProductCard />
 					<ProductCard />
@@ -21,7 +22,8 @@ export const MainPage = () => {
 					<ProductCard />
 					<ProductCard />
 					<ProductCard />
-				</div>
+				</ProductsList> */}
+
 				<div className={styles.videoMain}>
 					<div className={styles.magazineBlock}>
 						<div className={styles.imageBlock}>

@@ -28,6 +28,6 @@ h3 {
 	all: unset;
 	font-family: Unica77LLWeb2;
 }
-a:link {
+a:hover {
 	color: #00af66;
 }
