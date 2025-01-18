@@ -8,11 +8,18 @@ export type IdAndTitle = {
 	_id: string;
 	title: string;
 };
+
+export type size = {
+	_id: string;
+	size: string;
+	amount: number;
+};
 export type Product = {
 	_id: string;
 	additionalImages: string[];
 	color: Color;
 	imageURL: string;
+	sizes: [{ size: string; amount: number }];
 };
 
 export type ProductType = {

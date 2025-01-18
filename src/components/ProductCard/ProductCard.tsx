@@ -1,19 +1,40 @@
-import { Button, Select } from '@mui/material';
+import Select from 'react-select';
 import styles from './styles.module.css';
 import { IdAndTitle, Product, ProductType } from '../../types';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { CustomSelect } from '../CustomSelect/CustomSelect';
 
 type ProductCard = {
 	id: string;
 	title: string;
 	price: number;
 	variants: Product[];
+	chainType: [IdAndTitle];
 };
 
-export const ProductCard = ({ id, title, price, variants }: ProductCard) => {
+export const ProductCard = ({ id, title, price, variants, chainType }: ProductCard) => {
 	const [selectedVariant, setSelectedVariant] = useState<Product>(variants[0]);
+	const [optionsSizes, setOptionsSizes] = useState<[{ value: string; label: string }]>();
+	const [optionsChains, setOptionsChains] = useState<[{ value: string; label: string }]>();
 
+	const handleOptions = () => {
+		const temp = selectedVariant.sizes.map((sizeObj) => ({
+			value: sizeObj.size,
+			label: sizeObj.size,
+		}));
+		setOptionsSizes(temp as [{ value: string; label: string }]);
+
+		const temp2 = chainType.map((sizeObj) => ({
+			value: sizeObj._id,
+			label: sizeObj.title,
+		}));
+		setOptionsChains(temp2 as [{ value: string; label: string }]);
+	};
+
+	useEffect(() => {
+		handleOptions();
+	}, []);
 	return (
 		<>
 			<div className={styles.mainBlock}>
@@ -38,10 +59,10 @@ export const ProductCard = ({ id, title, price, variants }: ProductCard) => {
 								}}
 							></div>
 						))}
-						<div className={styles.variant} />
 					</div>
-					<Select className={styles.select} />
-					<Select className={styles.select} />
+					{/* <Select styles={{ backgroundColor: 'red' }} className={styles.select} options={options} /> */}
+					{selectedVariant.sizes.length > 0 ? <Select options={optionsSizes} /> : null}
+					{chainType.length > 0 ? <Select options={optionsChains} /> : null}
 					<div className={styles.addButton}>
 						<div className={styles.buttonTitle}>Add To Cart {price}$</div>
 					</div>

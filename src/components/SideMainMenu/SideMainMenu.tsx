@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import { collections } from './consts';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 export const SideMainMenu = () => {
+	const [searchParams] = useSearchParams();
 	const [isOpen, setIsOpen] = useState(false);
+
 	function openMenu() {
 		setIsOpen(!isOpen);
 	}

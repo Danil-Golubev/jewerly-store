@@ -5,6 +5,7 @@ import { Footer } from './components/Footer/Footer';
 import { SideMainMenu } from './components/SideMainMenu/SideMainMenu';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AllProducts } from './pages/AllProducts/AllProducts';
+import { ProductPage } from './pages/ProductPage/ProductPage';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<MainPage />} />
 					<Route path='/products' element={<AllProducts />} />
+					<Route path='/products/:id' element={<ProductPage />} />
 				</Routes>
 			</div>
 

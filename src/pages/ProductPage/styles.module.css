@@ -1,0 +1,113 @@
+.productBlock {
+	margin-top: 4vh;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	width: 100%;
+	align-items: center;
+}
+.contentBlock {
+	display: flex;
+	width: 85%;
+	height: 80vh;
+	justify-content: space-between;
+}
+
+.photoBlock {
+	width: 50%;
+}
+
+.mainImage {
+	width: 100%;
+}
+
+.variantsBlock {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
+	height: 20px;
+}
+
+.variant {
+	cursor: pointer;
+	border-radius: 20px;
+}
+.mainTitle {
+	font-family: Unica77LLWeb2;
+	font-size: 24px;
+}
+
+.mainInfo {
+	display: flex;
+	flex-direction: column;
+}
+.additionalInfo {
+}
+
+.infoBlock {
+	width: 45%;
+	display: flex;
+	justify-content: center;
+}
+
+.infoBlockContent {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.additionalInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 15px; /* Расстояние между строками */
+}
+
+.infoColumns {
+	display: grid;
+	grid-template-columns: 100px 1fr; /* Левая колонка фиксированная, правая — адаптивная */
+	gap: 8px; /* Расстояние между колонками */
+}
+
+.row {
+	display: contents; /* Сохраняем структуру grid, для выравнивания колонок */
+}
+
+.titleInfo {
+	font-family: Unica77LLWeb2;
+	color: #333333; /* Цвет текста для заголовков */
+	text-align: left; /* Выравнивание по левому краю */
+}
+
+.valueInfo {
+	text-align: left; /* Выравнивание по левому краю */
+	word-wrap: break-word; /* Перенос слов, если текст слишком длинный */
+}
+
+.description {
+	font-family: Unica77LLWeb2;
+}
+
+.addButton {
+	display: flex;
+	align-items: center;
+	font-family: Unica77LLWeb2;
+	font-size: 14px;
+	background-color: #00af66;
+	width: 100%;
+	height: 40px;
+	justify-content: center;
+}
+
+.buttonTitle {
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 95%;
+}
+
+.additionalImage {
+	width: 100%;
+}

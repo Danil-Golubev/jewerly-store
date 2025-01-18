@@ -1,6 +1,7 @@
 .mainBlock {
 	height: auto;
 	width: auto;
+
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -29,9 +30,7 @@
 	width: 100%;
 }
 .select {
-	border: none;
 	background-color: #f2f1f0;
-	color: black;
 	height: 50px;
 	width: 100%;
 }
@@ -45,7 +44,6 @@
 	height: 50px;
 }
 .buttonTitle {
-	font-size: 14px;
 	padding-left: 20px;
 }
 
