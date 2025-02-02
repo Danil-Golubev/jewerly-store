@@ -3,7 +3,6 @@
 }
 
 @font-face {
-	font-display: swap;
 	font-family: Unica77LLWeb1;
 	font-style: normal;
 	font-weight: 400;
@@ -12,7 +11,6 @@
 		url(//www.homer.com/cdn/shop/t/45/assets/Unica77LLWeb-Regular.woff?v=80763290268616072091714525209) format('woff');
 }
 @font-face {
-	font-display: swap;
 	font-family: Unica77LLWeb2;
 	font-style: normal;
 	font-weight: 700;
