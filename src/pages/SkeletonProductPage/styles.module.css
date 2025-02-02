@@ -1,0 +1,109 @@
+@keyframes skeleton-loading {
+	0% {
+		background-color: rgb(235, 235, 235);
+	}
+	50% {
+		background-color: rgb(250, 250, 250);
+	}
+	100% {
+		background-color: rgb(235, 235, 235);
+	}
+}
+
+.skeleton {
+	animation: skeleton-loading 1s infinite ease-in-out;
+	border-radius: 12px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05); /* Лёгкая тень для контраста */
+}
+
+.productBlock {
+	margin-top: 4vh;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	width: 100%;
+	align-items: center;
+	background-color: white;
+}
+
+.contentBlock {
+	display: flex;
+	width: 85%;
+	height: 80vh;
+	justify-content: space-between;
+}
+
+.photoBlock {
+	width: 50%;
+	border-radius: 50px;
+}
+
+.mainImage {
+	width: 100%;
+	height: 100%;
+	border-radius: 50px;
+}
+
+.mainTitle {
+	height: 40px;
+	width: 100%;
+	font-family: Unica77LLWeb2;
+	font-size: 24px;
+	border-radius: 50px;
+}
+
+.mainInfo {
+	display: flex;
+	flex-direction: column;
+}
+
+.infoBlock {
+	width: 45%;
+	display: flex;
+	justify-content: center;
+}
+
+.infoBlockContent {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	width: 100%;
+}
+
+.infoColumns {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.row {
+	height: 30px;
+	width: 100%;
+	border-radius: 50px;
+}
+
+.description {
+	font-family: Unica77LLWeb2;
+	height: 90px;
+	width: 100%;
+	border-radius: 50px;
+}
+
+.addButton {
+	font-size: 14px;
+	width: 100%;
+	height: 40px;
+	border-radius: 50px;
+}
+
+/* Применяем skeleton-эффект ко всем нужным элементам */
+.photoBlock,
+.mainImage,
+.mainTitle,
+.row,
+.description,
+.addButton {
+	background-color: rgb(235, 235, 235);
+	animation: skeleton-loading 1s infinite ease-in-out;
+}

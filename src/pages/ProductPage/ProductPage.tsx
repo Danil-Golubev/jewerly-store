@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { IdAndTitle, Product, ProductType, size } from '../../types';
+import { IdAndTitle, Product, ProductType } from '../../types';
 import { fetchGetProduct } from '../../api/product';
 import Select from 'react-select';
 import styles from './styles.module.css';
+import { SkeletonProductPage } from '../SkeletonProductPage/SkeletonProductPage';
 export const ProductPage = () => {
 	const { id } = useParams();
 	const [item, setItem] = useState<ProductType>();
@@ -43,6 +44,10 @@ export const ProductPage = () => {
 	useEffect(() => {
 		handleItem();
 	}, [id]);
+
+	if (!item) {
+		return <SkeletonProductPage />;
+	}
 	return (
 		<div className={styles.productBlock}>
 			<div className={styles.contentBlock}>

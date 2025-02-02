@@ -50,6 +50,7 @@ export const ProductCard = ({ id, title, price, variants, chainType }: ProductCa
 					<div className={styles.variantsBlock}>
 						{variants.map((variant, _index) => (
 							<div
+								key={variant._id}
 								onClick={() => setSelectedVariant(variants[_index])}
 								className={styles.variant}
 								style={{
